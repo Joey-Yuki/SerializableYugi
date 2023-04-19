@@ -11,6 +11,7 @@ namespace SerializableYugi
     internal class Monstruo
     {
         string nombre;
+        string miverga;
         string descripcion;
         string tipo;
         string atributo;
