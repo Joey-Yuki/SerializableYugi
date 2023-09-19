@@ -44,6 +44,10 @@ namespace SerializableYugi
         public string get_nombre() {
             return nombre;
         }
+
+        public string get_soporte() {
+            return soporte;
+        }
         public string get_tipo() {
             return tipo;
         }
@@ -96,6 +100,10 @@ namespace SerializableYugi
         public string get_nombre() {
             return nombre;
         }
+
+        public string get_soporte() {
+            return soporte;
+        }
         public string get_tipo() {
             return tipo;
         }
@@ -133,6 +141,10 @@ namespace SerializableYugi
         public string get_nombre()
         {
             return nombre;
+        }
+        public string get_soporte()
+        {
+            return soporte;
         }
         public string get_tipo()
         {

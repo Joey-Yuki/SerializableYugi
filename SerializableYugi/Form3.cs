@@ -162,13 +162,28 @@ namespace SerializableYugi
         private void BuscarArquetipo() {
             FileStream fs = new FileStream(archivo, FileMode.Open);
             BinaryFormatter bf = new BinaryFormatter();
-            
+            switch (archivo)
+            {
+                case "Magicas":
+                    while (fs.Position < fs.Length)
+                    {
+                        magica = (Magica)bf.Deserialize(fs);
+                        if (magica.get_soporte().ToLower().Contains(soporte.Text.ToLower())) listBox1.Items.Add(magica);
+                    }; break;
+                case "Monstruos":
                     while (fs.Position < fs.Length)
                     {
                         mons = (Monstruo)bf.Deserialize(fs);
-                        if (mons.getArquetipo().ToLower().Contains(soporte.Text.ToLower())) listBox1.Items.Add(mons);
-                    };
-               
+                        if (mons.get_soporte().ToLower().Contains(soporte.Text.ToLower())) listBox1.Items.Add(mons);
+                    }; break;
+                case "Trampas":
+                    while (fs.Position < fs.Length)
+                    {
+                        trampa = (Trampa)bf.Deserialize(fs);
+                        if (trampa.get_soporte().ToLower().Contains(soporte.Text.ToLower())) listBox1.Items.Add(trampa);
+                    }; break;
+            }//SWITCH
+
             fs.Close();
         }
 
@@ -243,5 +258,7 @@ namespace SerializableYugi
         {
 
         }
+    
+        
     }
 }
