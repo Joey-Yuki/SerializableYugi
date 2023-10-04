@@ -34,12 +34,12 @@ namespace SerializableYugi
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carta));
             this.tipo = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.atk = new System.Windows.Forms.TextBox();
+            this.def = new System.Windows.Forms.TextBox();
             this.set = new System.Windows.Forms.TextBox();
             this.ilustracion = new System.Windows.Forms.PictureBox();
             this.atributo = new System.Windows.Forms.PictureBox();
             this.editar = new System.Windows.Forms.Button();
-            this.def = new System.Windows.Forms.TextBox();
-            this.atk = new System.Windows.Forms.TextBox();
             this.tipomons = new System.Windows.Forms.TextBox();
             this.descripcion = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.TextBox();
@@ -67,6 +67,28 @@ namespace SerializableYugi
             this.panel2.Size = new System.Drawing.Size(150, 29);
             this.panel2.TabIndex = 8;
             this.panel2.Visible = false;
+            // 
+            // atk
+            // 
+            this.atk.BackColor = System.Drawing.Color.MistyRose;
+            this.atk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.atk.Location = new System.Drawing.Point(3, 0);
+            this.atk.Name = "atk";
+            this.atk.ReadOnly = true;
+            this.atk.Size = new System.Drawing.Size(68, 13);
+            this.atk.TabIndex = 4;
+            this.atk.Text = "ATK";
+            // 
+            // def
+            // 
+            this.def.BackColor = System.Drawing.Color.MistyRose;
+            this.def.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.def.Location = new System.Drawing.Point(77, 0);
+            this.def.Name = "def";
+            this.def.ReadOnly = true;
+            this.def.Size = new System.Drawing.Size(68, 13);
+            this.def.TabIndex = 5;
+            this.def.Text = "DEF";
             // 
             // set
             // 
@@ -102,35 +124,13 @@ namespace SerializableYugi
             // 
             // editar
             // 
-            this.editar.Location = new System.Drawing.Point(12, 422);
+            this.editar.Location = new System.Drawing.Point(12, 425);
             this.editar.Name = "editar";
-            this.editar.Size = new System.Drawing.Size(75, 23);
+            this.editar.Size = new System.Drawing.Size(66, 20);
             this.editar.TabIndex = 12;
             this.editar.Text = "Editar";
             this.editar.UseVisualStyleBackColor = true;
             this.editar.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // def
-            // 
-            this.def.BackColor = System.Drawing.Color.MistyRose;
-            this.def.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.def.Location = new System.Drawing.Point(77, 0);
-            this.def.Name = "def";
-            this.def.ReadOnly = true;
-            this.def.Size = new System.Drawing.Size(68, 13);
-            this.def.TabIndex = 5;
-            this.def.Text = "DEF";
-            // 
-            // atk
-            // 
-            this.atk.BackColor = System.Drawing.Color.MistyRose;
-            this.atk.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.atk.Location = new System.Drawing.Point(3, 0);
-            this.atk.Name = "atk";
-            this.atk.ReadOnly = true;
-            this.atk.Size = new System.Drawing.Size(68, 13);
-            this.atk.TabIndex = 4;
-            this.atk.Text = "ATK";
             // 
             // tipomons
             // 
@@ -157,13 +157,13 @@ namespace SerializableYugi
             // 
             // nombre
             // 
-            this.nombre.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(197)))), ((int)(((byte)(95)))));
             this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nombre.Location = new System.Drawing.Point(23, 28);
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             this.nombre.Size = new System.Drawing.Size(210, 13);
-            this.nombre.TabIndex = 0;
+            this.nombre.TabIndex = 13;
             // 
             // Carta
             // 
@@ -174,6 +174,7 @@ namespace SerializableYugi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(294, 450);
+            this.Controls.Add(this.nombre);
             this.Controls.Add(this.editar);
             this.Controls.Add(this.set);
             this.Controls.Add(this.tipomons);
@@ -182,7 +183,6 @@ namespace SerializableYugi
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.atributo);
             this.Controls.Add(this.descripcion);
-            this.Controls.Add(this.nombre);
             this.DoubleBuffered = true;
             this.Name = "Carta";
             this.Text = "Form5";

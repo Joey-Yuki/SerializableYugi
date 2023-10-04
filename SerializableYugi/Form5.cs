@@ -65,6 +65,7 @@ namespace SerializableYugi
         {
             Fuente.CargarFuente();
             Fuente.LocalizarFuente(this.nombre, 8);
+            //Fuente.LocalizarFuente(this.userControl11, 8);
             Fuente.LocalizarFuente(this.descripcion, 8);
             Fuente.LocalizarFuente(atk, 8);
             Fuente.LocalizarFuente(def, 8);
