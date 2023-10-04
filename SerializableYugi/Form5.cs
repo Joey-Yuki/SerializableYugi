@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SerializableYugi.Properties;
+using System;
 using System.Windows.Forms;
 
 namespace SerializableYugi
@@ -6,7 +7,8 @@ namespace SerializableYugi
     public partial class Carta : Form
     {
         int tipocarta = 0;
-        public Carta(string iinombre, string iidescripcion, string iiatk, string iidef, string iitipomons, string iiatributo, string iiset, string iiruta, int iitipocarta, string iirareza, int iicopias)
+        string extradeck;
+        public Carta(string iinombre, string iidescripcion, string iiatk, string iidef, string iitipomons, string iiatributo, string iiset, string iiruta, int iitipocarta, string iirareza, int iicopias, string iiextradeck)
         {
             InitializeComponent();
             tipocarta = iitipocarta;
@@ -16,6 +18,8 @@ namespace SerializableYugi
             atk.Text += iiatk;
             def.Text += iidef;
             set.Text = iiset;
+            extradeck = iiextradeck;
+            
             tipomons.Visible = true;
             panel2.Visible = true;
             ilustracion.ImageLocation = iiruta;
@@ -29,6 +33,13 @@ namespace SerializableYugi
                 case "Fuego": atributo.Image = Properties.Resources.FIRE; break;
                 case "Agua": atributo.Image = Properties.Resources.WATER; break;
 
+            }
+
+            switch (iiextradeck) {
+                case "Fusion": this.BackgroundImage = Resources.fusion; break;
+                case "Sincronia": this.BackgroundImage = Resources.SYNCHRONY; break;
+                case "Xyz": this.BackgroundImage = Resources.XYZ; break;
+                case "Link": this.BackgroundImage = Resources.LINK; break;
             }
         }//CONSTRUCTOR
 
@@ -45,8 +56,8 @@ namespace SerializableYugi
             this.Text = "Nº de copias: " + iicopias + " - " + iirareza;
             switch (iitipocarta)
             {
-                case 2: atributo.Image = Properties.Resources.SPELL; break;
-                case 3: atributo.Image = Properties.Resources.TRAP; break;
+                case 2: atributo.Image = Properties.Resources.SPELL; this.BackgroundImage = Resources.SPELL_CARD; break;
+                case 3: atributo.Image = Properties.Resources.TRAP; this.BackgroundImage = Resources.TRAP_CARD; break;
             }
         }//CONSTRUCTOR2
 

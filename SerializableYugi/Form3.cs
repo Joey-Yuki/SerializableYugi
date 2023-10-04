@@ -288,7 +288,7 @@ namespace SerializableYugi
                 switch (archivo)
                 {
                     case "Monstruos":
-                        cr = new Carta((k as Monstruo).Nombre, (k as Monstruo).Descripcion, " " + (k as Monstruo).Atk, " " + (k as Monstruo).Def, (k as Monstruo).Tipo, (k as Monstruo).Atributo, (k as Monstruo).Set, (k as Monstruo).Rutaimagen, 1, k.Rareza, k.Copias);
+                        cr = new Carta((k as Monstruo).Nombre, (k as Monstruo).Descripcion, " " + (k as Monstruo).Atk, " " + (k as Monstruo).Def, (k as Monstruo).Tipo, (k as Monstruo).Atributo, (k as Monstruo).Set, (k as Monstruo).Rutaimagen, 1, k.Rareza, k.Copias, (k as Monstruo).Extradeck);
                         break;
                     case "Magicas":
                         cr = new Carta(k.Nombre, k.Tipo, k.Descripcion, k.Set, k.Rutaimagen, 2, k.Rareza, k.Copias);

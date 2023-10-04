@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carta));
             this.nombre = new System.Windows.Forms.TextBox();
             this.descripcion = new System.Windows.Forms.TextBox();
             this.atk = new System.Windows.Forms.TextBox();
@@ -46,52 +47,62 @@
             // 
             // nombre
             // 
-            this.nombre.Location = new System.Drawing.Point(12, 13);
+            this.nombre.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombre.Location = new System.Drawing.Point(23, 28);
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
-            this.nombre.Size = new System.Drawing.Size(225, 20);
+            this.nombre.Size = new System.Drawing.Size(210, 13);
             this.nombre.TabIndex = 0;
             // 
             // descripcion
             // 
-            this.descripcion.Location = new System.Drawing.Point(12, 300);
+            this.descripcion.BackColor = System.Drawing.Color.MistyRose;
+            this.descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.descripcion.Location = new System.Drawing.Point(23, 348);
             this.descripcion.Multiline = true;
             this.descripcion.Name = "descripcion";
             this.descripcion.ReadOnly = true;
             this.descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descripcion.Size = new System.Drawing.Size(257, 98);
+            this.descripcion.Size = new System.Drawing.Size(257, 56);
             this.descripcion.TabIndex = 1;
             // 
             // atk
             // 
-            this.atk.Location = new System.Drawing.Point(3, 6);
+            this.atk.BackColor = System.Drawing.Color.MistyRose;
+            this.atk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.atk.Location = new System.Drawing.Point(3, 0);
             this.atk.Name = "atk";
             this.atk.ReadOnly = true;
-            this.atk.Size = new System.Drawing.Size(68, 20);
+            this.atk.Size = new System.Drawing.Size(68, 13);
             this.atk.TabIndex = 4;
             this.atk.Text = "ATK";
             // 
             // def
             // 
-            this.def.Location = new System.Drawing.Point(77, 6);
+            this.def.BackColor = System.Drawing.Color.MistyRose;
+            this.def.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.def.Location = new System.Drawing.Point(77, 0);
             this.def.Name = "def";
             this.def.ReadOnly = true;
-            this.def.Size = new System.Drawing.Size(68, 20);
+            this.def.Size = new System.Drawing.Size(68, 13);
             this.def.TabIndex = 5;
             this.def.Text = "DEF";
             // 
             // tipomons
             // 
-            this.tipomons.Location = new System.Drawing.Point(12, 274);
+            this.tipomons.BackColor = System.Drawing.Color.MistyRose;
+            this.tipomons.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tipomons.Location = new System.Drawing.Point(23, 334);
             this.tipomons.Name = "tipomons";
             this.tipomons.ReadOnly = true;
-            this.tipomons.Size = new System.Drawing.Size(100, 20);
+            this.tipomons.Size = new System.Drawing.Size(100, 13);
             this.tipomons.TabIndex = 6;
             this.tipomons.Visible = false;
             // 
             // tipo
             // 
-            this.tipo.Location = new System.Drawing.Point(159, 39);
+            this.tipo.Location = new System.Drawing.Point(158, 54);
             this.tipo.Name = "tipo";
             this.tipo.ReadOnly = true;
             this.tipo.Size = new System.Drawing.Size(105, 20);
@@ -100,9 +111,10 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.atk);
             this.panel2.Controls.Add(this.def);
-            this.panel2.Location = new System.Drawing.Point(119, 404);
+            this.panel2.Location = new System.Drawing.Point(119, 409);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 29);
             this.panel2.TabIndex = 8;
@@ -110,37 +122,39 @@
             // 
             // set
             // 
-            this.set.Location = new System.Drawing.Point(196, 274);
+            this.set.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.set.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.set.Location = new System.Drawing.Point(215, 322);
             this.set.Name = "set";
             this.set.ReadOnly = true;
-            this.set.Size = new System.Drawing.Size(67, 20);
+            this.set.Size = new System.Drawing.Size(67, 13);
             this.set.TabIndex = 11;
             // 
             // ilustracion
             // 
-            this.ilustracion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ilustracion.ErrorImage = global::SerializableYugi.Properties.Resources.DEFAULTerror;
             this.ilustracion.Image = global::SerializableYugi.Properties.Resources.DEFAULTerror;
             this.ilustracion.InitialImage = global::SerializableYugi.Properties.Resources.DEFAULTerror;
-            this.ilustracion.Location = new System.Drawing.Point(35, 70);
+            this.ilustracion.Location = new System.Drawing.Point(36, 80);
             this.ilustracion.Name = "ilustracion";
-            this.ilustracion.Size = new System.Drawing.Size(219, 198);
+            this.ilustracion.Size = new System.Drawing.Size(218, 236);
             this.ilustracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ilustracion.TabIndex = 10;
             this.ilustracion.TabStop = false;
             // 
             // atributo
             // 
-            this.atributo.Location = new System.Drawing.Point(243, 3);
+            this.atributo.BackColor = System.Drawing.Color.Transparent;
+            this.atributo.Location = new System.Drawing.Point(239, 21);
             this.atributo.Name = "atributo";
-            this.atributo.Size = new System.Drawing.Size(29, 30);
+            this.atributo.Size = new System.Drawing.Size(30, 27);
             this.atributo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.atributo.TabIndex = 2;
             this.atributo.TabStop = false;
             // 
             // editar
             // 
-            this.editar.Location = new System.Drawing.Point(23, 410);
+            this.editar.Location = new System.Drawing.Point(12, 422);
             this.editar.Name = "editar";
             this.editar.Size = new System.Drawing.Size(75, 23);
             this.editar.TabIndex = 12;
@@ -152,6 +166,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(294, 450);
             this.Controls.Add(this.editar);
             this.Controls.Add(this.set);
@@ -162,6 +180,7 @@
             this.Controls.Add(this.atributo);
             this.Controls.Add(this.descripcion);
             this.Controls.Add(this.nombre);
+            this.DoubleBuffered = true;
             this.Name = "Carta";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Carta_Load);

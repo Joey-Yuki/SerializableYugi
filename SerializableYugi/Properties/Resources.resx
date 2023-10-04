@@ -142,17 +142,26 @@
   <data name="FIRE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\iconos\fire.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fusion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\iconos\fusion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KURIBOH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ICONOS\KURIBOH.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\iconos\light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LINK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\iconos\link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MONTANACOLORPXART" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ICONOS\MONTANACOLORPXART.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MOUNTAINPXARTBW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ICONOS\MOUNTAINPXARTBW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NORMAL_MONSTER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\iconos\normal_monster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OBELISKPIXELART" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ICONOS\OBELISKPIXELART.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,17 +187,29 @@
   <data name="SPELL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\iconos\spell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SPELL_CARD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\iconos\spell_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="StoneSerifSemibold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\FONT\StoneSerifSemibold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SYNCHRONY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\iconos\synchrony.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TRAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ICONOS\TRAP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TRAP_CARD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\iconos\trap_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WATER" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\iconos\water.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WIND" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\iconos\wind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XYZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\iconos\xyz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="YAMICOLORPXART" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ICONOS\YAMICOLORPXART.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

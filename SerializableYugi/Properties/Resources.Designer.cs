@@ -140,6 +140,16 @@ namespace SerializableYugi.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fusion {
+            get {
+                object obj = ResourceManager.GetObject("fusion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
         internal static System.Drawing.Icon KURIBOH {
@@ -162,6 +172,16 @@ namespace SerializableYugi.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LINK {
+            get {
+                object obj = ResourceManager.GetObject("LINK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MONTANACOLORPXART {
             get {
                 object obj = ResourceManager.GetObject("MONTANACOLORPXART", resourceCulture);
@@ -175,6 +195,16 @@ namespace SerializableYugi.Properties {
         internal static System.Drawing.Bitmap MOUNTAINPXARTBW {
             get {
                 object obj = ResourceManager.GetObject("MOUNTAINPXARTBW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NORMAL_MONSTER {
+            get {
+                object obj = ResourceManager.GetObject("NORMAL_MONSTER", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -260,6 +290,16 @@ namespace SerializableYugi.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SPELL_CARD {
+            get {
+                object obj = ResourceManager.GetObject("SPELL_CARD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
         internal static byte[] StoneSerifSemibold {
@@ -272,9 +312,29 @@ namespace SerializableYugi.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SYNCHRONY {
+            get {
+                object obj = ResourceManager.GetObject("SYNCHRONY", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TRAP {
             get {
                 object obj = ResourceManager.GetObject("TRAP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TRAP_CARD {
+            get {
+                object obj = ResourceManager.GetObject("TRAP_CARD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -295,6 +355,16 @@ namespace SerializableYugi.Properties {
         internal static System.Drawing.Bitmap WIND {
             get {
                 object obj = ResourceManager.GetObject("WIND", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap XYZ {
+            get {
+                object obj = ResourceManager.GetObject("XYZ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

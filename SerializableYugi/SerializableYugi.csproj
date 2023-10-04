@@ -196,6 +196,13 @@
     <None Include="Resources\common_00002.wav" />
     <None Include="ICONOS\KURIBOH.ico" />
     <None Include="ICONOS\EXODIA.ico" />
+    <Content Include="ICONOS\fusion.png" />
+    <Content Include="ICONOS\LINK.png" />
+    <Content Include="ICONOS\NORMAL_MONSTER.png" />
+    <None Include="ICONOS\SPELL_CARD.png" />
+    <Content Include="ICONOS\SYNCHRONY.png" />
+    <None Include="ICONOS\TRAP_CARD.png" />
+    <Content Include="ICONOS\XYZ.png" />
     <Content Include="ROMPECABEZASPIXELART.ico" />
     <Content Include="ICONOS\DARK.png" />
     <None Include="ICONOS\DEFAULTerror.png" />
