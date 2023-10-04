@@ -1,5 +1,6 @@
 ﻿using SerializableYugi.Properties;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SerializableYugi
@@ -18,8 +19,7 @@ namespace SerializableYugi
             atk.Text += iiatk;
             def.Text += iidef;
             set.Text = iiset;
-            extradeck = iiextradeck;
-            
+            extradeck = iiextradeck; 
             tipomons.Visible = true;
             panel2.Visible = true;
             ilustracion.ImageLocation = iiruta;
@@ -91,5 +91,6 @@ namespace SerializableYugi
             }
             fr4.Show();
         }
+
     }
 }

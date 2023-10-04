@@ -1,4 +1,7 @@
-﻿namespace SerializableYugi
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace SerializableYugi
 {
     partial class Carta
     {
@@ -29,76 +32,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carta));
-            this.nombre = new System.Windows.Forms.TextBox();
-            this.descripcion = new System.Windows.Forms.TextBox();
-            this.atk = new System.Windows.Forms.TextBox();
-            this.def = new System.Windows.Forms.TextBox();
-            this.tipomons = new System.Windows.Forms.TextBox();
             this.tipo = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.set = new System.Windows.Forms.TextBox();
             this.ilustracion = new System.Windows.Forms.PictureBox();
             this.atributo = new System.Windows.Forms.PictureBox();
             this.editar = new System.Windows.Forms.Button();
+            this.def = new System.Windows.Forms.TextBox();
+            this.atk = new System.Windows.Forms.TextBox();
+            this.tipomons = new System.Windows.Forms.TextBox();
+            this.descripcion = new System.Windows.Forms.TextBox();
+            this.nombre = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ilustracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.atributo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // nombre
-            // 
-            this.nombre.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nombre.Location = new System.Drawing.Point(23, 28);
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Size = new System.Drawing.Size(210, 13);
-            this.nombre.TabIndex = 0;
-            // 
-            // descripcion
-            // 
-            this.descripcion.BackColor = System.Drawing.Color.MistyRose;
-            this.descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.descripcion.Location = new System.Drawing.Point(23, 348);
-            this.descripcion.Multiline = true;
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
-            this.descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descripcion.Size = new System.Drawing.Size(257, 56);
-            this.descripcion.TabIndex = 1;
-            // 
-            // atk
-            // 
-            this.atk.BackColor = System.Drawing.Color.MistyRose;
-            this.atk.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.atk.Location = new System.Drawing.Point(3, 0);
-            this.atk.Name = "atk";
-            this.atk.ReadOnly = true;
-            this.atk.Size = new System.Drawing.Size(68, 13);
-            this.atk.TabIndex = 4;
-            this.atk.Text = "ATK";
-            // 
-            // def
-            // 
-            this.def.BackColor = System.Drawing.Color.MistyRose;
-            this.def.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.def.Location = new System.Drawing.Point(77, 0);
-            this.def.Name = "def";
-            this.def.ReadOnly = true;
-            this.def.Size = new System.Drawing.Size(68, 13);
-            this.def.TabIndex = 5;
-            this.def.Text = "DEF";
-            // 
-            // tipomons
-            // 
-            this.tipomons.BackColor = System.Drawing.Color.MistyRose;
-            this.tipomons.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tipomons.Location = new System.Drawing.Point(23, 334);
-            this.tipomons.Name = "tipomons";
-            this.tipomons.ReadOnly = true;
-            this.tipomons.Size = new System.Drawing.Size(100, 13);
-            this.tipomons.TabIndex = 6;
-            this.tipomons.Visible = false;
             // 
             // tipo
             // 
@@ -124,7 +72,7 @@
             // 
             this.set.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.set.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.set.Location = new System.Drawing.Point(215, 322);
+            this.set.Location = new System.Drawing.Point(196, 322);
             this.set.Name = "set";
             this.set.ReadOnly = true;
             this.set.Size = new System.Drawing.Size(67, 13);
@@ -162,6 +110,61 @@
             this.editar.UseVisualStyleBackColor = true;
             this.editar.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // def
+            // 
+            this.def.BackColor = System.Drawing.Color.MistyRose;
+            this.def.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.def.Location = new System.Drawing.Point(77, 0);
+            this.def.Name = "def";
+            this.def.ReadOnly = true;
+            this.def.Size = new System.Drawing.Size(68, 13);
+            this.def.TabIndex = 5;
+            this.def.Text = "DEF";
+            // 
+            // atk
+            // 
+            this.atk.BackColor = System.Drawing.Color.MistyRose;
+            this.atk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.atk.Location = new System.Drawing.Point(3, 0);
+            this.atk.Name = "atk";
+            this.atk.ReadOnly = true;
+            this.atk.Size = new System.Drawing.Size(68, 13);
+            this.atk.TabIndex = 4;
+            this.atk.Text = "ATK";
+            // 
+            // tipomons
+            // 
+            this.tipomons.BackColor = System.Drawing.Color.MistyRose;
+            this.tipomons.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tipomons.Location = new System.Drawing.Point(23, 334);
+            this.tipomons.Name = "tipomons";
+            this.tipomons.ReadOnly = true;
+            this.tipomons.Size = new System.Drawing.Size(100, 13);
+            this.tipomons.TabIndex = 6;
+            this.tipomons.Visible = false;
+            // 
+            // descripcion
+            // 
+            this.descripcion.BackColor = System.Drawing.Color.MistyRose;
+            this.descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.descripcion.Location = new System.Drawing.Point(23, 348);
+            this.descripcion.Multiline = true;
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
+            this.descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.descripcion.Size = new System.Drawing.Size(257, 56);
+            this.descripcion.TabIndex = 1;
+            // 
+            // nombre
+            // 
+            this.nombre.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombre.Location = new System.Drawing.Point(23, 28);
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Size = new System.Drawing.Size(210, 13);
+            this.nombre.TabIndex = 0;
+            // 
             // Carta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,17 +197,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox nombre;
-        private System.Windows.Forms.TextBox descripcion;
         private System.Windows.Forms.PictureBox atributo;
-        private System.Windows.Forms.TextBox atk;
-        private System.Windows.Forms.TextBox def;
-        private System.Windows.Forms.TextBox tipomons;
         private System.Windows.Forms.TextBox tipo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox ilustracion;
         private System.Windows.Forms.TextBox set;
         private System.Windows.Forms.Button editar;
+        private TextBox atk;
+        private TextBox def;
+        private TextBox tipomons;
+        private TextBox descripcion;
+        private TextBox nombre;
     }
 }
