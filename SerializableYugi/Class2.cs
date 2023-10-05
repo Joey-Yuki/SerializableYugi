@@ -10,8 +10,6 @@ namespace SerializableYugi
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr fuente, uint cbfont, IntPtr pdv, [In] ref uint pcFonts);
         static FontFamily ff;
-        static FontFamily ff2;
-        static FontFamily ff3;
         public static void CargarFuente()
         {
             byte[] arrayfuente = Properties.Resources.StoneSerifSemibold;

@@ -15,7 +15,7 @@ namespace SerializableYugi
             InitializeComponent();
             tipocarta = iitipocarta;
             nombre.Text = iinombre.ToUpper();
-            tipomons.Text = "["+iitipomons+"]";
+            tipomons.Text = "[" + iitipomons + "]";
             descripcion.Text = iidescripcion;
             atk.Text += iiatk;
             def.Text += iidef;
@@ -77,7 +77,7 @@ namespace SerializableYugi
             Fuente.LocalizarFuente(tipomons, 7);
             Fuente.LocalizarFuente(tipo, 8);
             Fuente.LocalizarFuente(editar, 8);
-        } 
+        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
