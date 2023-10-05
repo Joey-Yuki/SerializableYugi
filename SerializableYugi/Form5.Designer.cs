@@ -32,7 +32,6 @@ namespace SerializableYugi
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carta));
-            this.tipo = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.atk = new System.Windows.Forms.TextBox();
             this.def = new System.Windows.Forms.TextBox();
@@ -41,8 +40,6 @@ namespace SerializableYugi
             this.atributo = new System.Windows.Forms.PictureBox();
             this.editar = new System.Windows.Forms.Button();
             this.tipomons = new System.Windows.Forms.TextBox();
-            this.descripcion = new System.Windows.Forms.TextBox();
-            this.nombre = new System.Windows.Forms.TextBox();
             this.panelnivel = new System.Windows.Forms.Panel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -56,6 +53,9 @@ namespace SerializableYugi
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.tipo = new System.Windows.Forms.TextBox();
+            this.descripcion = new System.Windows.Forms.TextBox();
+            this.nombre = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ilustracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.atributo)).BeginInit();
@@ -73,15 +73,6 @@ namespace SerializableYugi
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tipo
-            // 
-            this.tipo.Location = new System.Drawing.Point(175, 102);
-            this.tipo.Name = "tipo";
-            this.tipo.ReadOnly = true;
-            this.tipo.Size = new System.Drawing.Size(105, 20);
-            this.tipo.TabIndex = 8;
-            this.tipo.Visible = false;
             // 
             // panel2
             // 
@@ -168,28 +159,6 @@ namespace SerializableYugi
             this.tipomons.Size = new System.Drawing.Size(100, 13);
             this.tipomons.TabIndex = 6;
             this.tipomons.Visible = false;
-            // 
-            // descripcion
-            // 
-            this.descripcion.BackColor = System.Drawing.Color.MistyRose;
-            this.descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.descripcion.Location = new System.Drawing.Point(23, 348);
-            this.descripcion.Multiline = true;
-            this.descripcion.Name = "descripcion";
-            this.descripcion.ReadOnly = true;
-            this.descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descripcion.Size = new System.Drawing.Size(257, 56);
-            this.descripcion.TabIndex = 1;
-            // 
-            // nombre
-            // 
-            this.nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(197)))), ((int)(((byte)(95)))));
-            this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nombre.Location = new System.Drawing.Point(23, 28);
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Size = new System.Drawing.Size(210, 13);
-            this.nombre.TabIndex = 13;
             // 
             // panelnivel
             // 
@@ -331,6 +300,37 @@ namespace SerializableYugi
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "9";
             // 
+            // tipo
+            // 
+            this.tipo.Location = new System.Drawing.Point(36, 80);
+            this.tipo.Name = "tipo";
+            this.tipo.ReadOnly = true;
+            this.tipo.Size = new System.Drawing.Size(105, 20);
+            this.tipo.TabIndex = 8;
+            this.tipo.Visible = false;
+            // 
+            // descripcion
+            // 
+            this.descripcion.BackColor = System.Drawing.Color.MistyRose;
+            this.descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.descripcion.Location = new System.Drawing.Point(23, 348);
+            this.descripcion.Multiline = true;
+            this.descripcion.Name = "descripcion";
+            this.descripcion.ReadOnly = true;
+            this.descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.descripcion.Size = new System.Drawing.Size(257, 56);
+            this.descripcion.TabIndex = 1;
+            // 
+            // nombre
+            // 
+            this.nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(197)))), ((int)(((byte)(95)))));
+            this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombre.Location = new System.Drawing.Point(23, 28);
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Size = new System.Drawing.Size(210, 13);
+            this.nombre.TabIndex = 13;
+            // 
             // Carta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -378,7 +378,6 @@ namespace SerializableYugi
 
         #endregion
         private System.Windows.Forms.PictureBox atributo;
-        private System.Windows.Forms.TextBox tipo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox ilustracion;
         private System.Windows.Forms.TextBox set;
@@ -386,8 +385,6 @@ namespace SerializableYugi
         private TextBox atk;
         private TextBox def;
         private TextBox tipomons;
-        private TextBox descripcion;
-        private TextBox nombre;
         private Panel panelnivel;
         private PictureBox pictureBox12;
         private PictureBox pictureBox9;
@@ -401,5 +398,8 @@ namespace SerializableYugi
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox4;
+        private TextBox tipo;
+        private TextBox descripcion;
+        private TextBox nombre;
     }
 }

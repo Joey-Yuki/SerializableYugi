@@ -1,5 +1,6 @@
 ﻿using SerializableYugi.Properties;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SerializableYugi
@@ -48,16 +49,17 @@ namespace SerializableYugi
         {
             InitializeComponent();
             tipocarta = iitipocarta;
-            nombre.Text = iinombre;
+            nombre.Text = iinombre.ToUpper();
             tipo.Text = iitipo;
             descripcion.Text = iidescripcion;
             set.Text = iiset;
             tipo.Visible = true;
-            ilustracion.ImageLocation = iiruta;
+            this.Controls.Remove(panelnivel);
+            tipo.Location = new System.Drawing.Point(158, 54);
             this.Text = "Nº de copias: " + iicopias + " - " + iirareza;
             switch (iitipocarta)
             {
-                case 2: atributo.Image = Properties.Resources.SPELL; this.BackgroundImage = Resources.SPELL_CARD; break;
+                case 2: atributo.Image = Properties.Resources.SPELL; this.BackgroundImage = Resources.SPELL_CARD; descripcion.BackColor = Color.Gainsboro; nombre.BackColor=Color.MediumSeaGreen; break;
                 case 3: atributo.Image = Properties.Resources.TRAP; this.BackgroundImage = Resources.TRAP_CARD; break;
             }
         }//CONSTRUCTOR2
@@ -66,7 +68,6 @@ namespace SerializableYugi
         {
             Fuente.CargarFuente();
             Fuente.LocalizarFuente(this.nombre, 8);
-            //Fuente.LocalizarFuente(this.userControl11, 8);
             Fuente.LocalizarFuente(this.descripcion, 8);
             Fuente.LocalizarFuente(atk, 8);
             Fuente.LocalizarFuente(def, 8);
