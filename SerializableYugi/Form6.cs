@@ -260,7 +260,7 @@ namespace SerializableYugi
                 {
                     Monstruo monstruo = (Monstruo)bf.Deserialize(fsMonstruos);
 
-                    if (iimons.Nombre.ToLower().Contains(monstruo.Soporte.ToLower())||iimons.Tipo.ToLower()==monstruo.Soporte.ToLower() && monstruo.Soporte != "" && monstruo.Soporte.ToLower() != "no")
+                    if (iimons.Nombre.ToLower().Contains(monstruo.Soporte.ToLower()) || iimons.Tipo.ToLower() == monstruo.Soporte.ToLower() && monstruo.Soporte != "" && monstruo.Soporte.ToLower() != "no")
                     {
                         Invoke(new Action(() =>
                         {
@@ -282,7 +282,7 @@ namespace SerializableYugi
                 while (fsMagicas.Position < fsMagicas.Length)
                 {
                     Magica magica = (Magica)bf.Deserialize(fsMagicas);
-                    if (iimons.Nombre.ToLower().Contains(magica.Soporte.ToLower())|| iimons.Tipo.ToLower()==magica.Soporte.ToLower() && magica.Soporte != "" && magica.Soporte.ToLower() != "no")
+                    if (iimons.Nombre.ToLower().Contains(magica.Soporte.ToLower()) || iimons.Tipo.ToLower() == magica.Soporte.ToLower() && magica.Soporte != "" && magica.Soporte.ToLower() != "no")
                     {
                         Invoke(new Action(() =>
                         {

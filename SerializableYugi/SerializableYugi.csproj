@@ -202,6 +202,7 @@
     <None Include="ICONOS\EXODIA.ico" />
     <Content Include="ICONOS\fusion.png" />
     <Content Include="ICONOS\LINK.png" />
+    <Content Include="ICONOS\niveles_estrella.png" />
     <Content Include="ICONOS\NORMAL_MONSTER.png" />
     <None Include="ICONOS\SPELL_CARD.png" />
     <Content Include="ICONOS\SYNCHRONY.png" />

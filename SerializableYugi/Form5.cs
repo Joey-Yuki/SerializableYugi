@@ -1,6 +1,5 @@
 ﻿using SerializableYugi.Properties;
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace SerializableYugi
@@ -19,7 +18,7 @@ namespace SerializableYugi
             atk.Text += iiatk;
             def.Text += iidef;
             set.Text = iiset;
-            extradeck = iiextradeck; 
+            extradeck = iiextradeck;
             tipomons.Visible = true;
             panel2.Visible = true;
             ilustracion.ImageLocation = iiruta;
@@ -35,7 +34,8 @@ namespace SerializableYugi
 
             }
 
-            switch (iiextradeck) {
+            switch (iiextradeck)
+            {
                 case "Fusion": this.BackgroundImage = Resources.fusion; break;
                 case "Sincronia": this.BackgroundImage = Resources.SYNCHRONY; break;
                 case "Xyz": this.BackgroundImage = Resources.XYZ; break;

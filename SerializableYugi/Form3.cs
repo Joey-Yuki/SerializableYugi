@@ -91,19 +91,19 @@ namespace SerializableYugi
                         while (fs.Position < fs.Length)
                         {
                             Magica magica = (Magica)bf.Deserialize(fs);
-                            if (magica.Tipo.ToLower()==(tipo.Text.ToLower())) listBox1.Items.Add(magica);
+                            if (magica.Tipo.ToLower() == (tipo.Text.ToLower())) listBox1.Items.Add(magica);
                         }; break;
                     case "Monstruos":
                         while (fs.Position < fs.Length)
                         {
                             Monstruo mons = (Monstruo)bf.Deserialize(fs);
-                            if (mons.Tipo.ToLower()==(tipo.Text.ToLower())) listBox1.Items.Add(mons);
+                            if (mons.Tipo.ToLower() == (tipo.Text.ToLower())) listBox1.Items.Add(mons);
                         }; break;
                     case "Trampas":
                         while (fs.Position < fs.Length)
                         {
                             Trampa trampa = (Trampa)bf.Deserialize(fs);
-                            if (trampa.Tipo.ToLower()==(tipo.Text.ToLower())) listBox1.Items.Add(trampa);
+                            if (trampa.Tipo.ToLower() == (tipo.Text.ToLower())) listBox1.Items.Add(trampa);
                         }; break;
                 }//SWITCH
 

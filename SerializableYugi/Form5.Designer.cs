@@ -43,14 +43,40 @@ namespace SerializableYugi
             this.tipomons = new System.Windows.Forms.TextBox();
             this.descripcion = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.TextBox();
+            this.panelnivel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ilustracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.atributo)).BeginInit();
+            this.panelnivel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // tipo
             // 
-            this.tipo.Location = new System.Drawing.Point(158, 54);
+            this.tipo.Location = new System.Drawing.Point(175, 102);
             this.tipo.Name = "tipo";
             this.tipo.ReadOnly = true;
             this.tipo.Size = new System.Drawing.Size(105, 20);
@@ -165,6 +191,146 @@ namespace SerializableYugi
             this.nombre.Size = new System.Drawing.Size(210, 13);
             this.nombre.TabIndex = 13;
             // 
+            // panelnivel
+            // 
+            this.panelnivel.BackColor = System.Drawing.Color.Transparent;
+            this.panelnivel.Controls.Add(this.pictureBox12);
+            this.panelnivel.Controls.Add(this.pictureBox9);
+            this.panelnivel.Controls.Add(this.pictureBox11);
+            this.panelnivel.Controls.Add(this.pictureBox8);
+            this.panelnivel.Controls.Add(this.pictureBox3);
+            this.panelnivel.Controls.Add(this.pictureBox6);
+            this.panelnivel.Controls.Add(this.pictureBox10);
+            this.panelnivel.Controls.Add(this.pictureBox7);
+            this.panelnivel.Controls.Add(this.pictureBox5);
+            this.panelnivel.Controls.Add(this.pictureBox2);
+            this.panelnivel.Controls.Add(this.pictureBox1);
+            this.panelnivel.Controls.Add(this.pictureBox4);
+            this.panelnivel.Location = new System.Drawing.Point(23, 54);
+            this.panelnivel.Name = "panelnivel";
+            this.panelnivel.Size = new System.Drawing.Size(246, 20);
+            this.panelnivel.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "11";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(83, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "8";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(123, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "6";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(43, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "10";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "12";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(103, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox6.TabIndex = 20;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "7";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(63, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox7.TabIndex = 21;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "9";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox8.Location = new System.Drawing.Point(143, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox8.TabIndex = 22;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "5";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox9.Location = new System.Drawing.Point(183, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox9.TabIndex = 23;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "3";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox10.Location = new System.Drawing.Point(163, 3);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox10.TabIndex = 15;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "4";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox11.Location = new System.Drawing.Point(203, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox11.TabIndex = 16;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Tag = "2";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Location = new System.Drawing.Point(223, 3);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox12.TabIndex = 17;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "1";
+            // 
             // Carta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +340,7 @@ namespace SerializableYugi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(294, 450);
+            this.Controls.Add(this.panelnivel);
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.editar);
             this.Controls.Add(this.set);
@@ -191,6 +358,19 @@ namespace SerializableYugi
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ilustracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.atributo)).EndInit();
+            this.panelnivel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +388,18 @@ namespace SerializableYugi
         private TextBox tipomons;
         private TextBox descripcion;
         private TextBox nombre;
+        private Panel panelnivel;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
     }
 }
