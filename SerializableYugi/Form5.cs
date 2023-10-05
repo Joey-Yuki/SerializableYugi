@@ -7,6 +7,7 @@ namespace SerializableYugi
 {
     public partial class Carta : Form
     {
+
         int tipocarta = 0;
         string extradeck;
         public Carta(string iinombre, string iidescripcion, string iiatk, string iidef, string iitipomons, string iiatributo, string iiset, string iiruta, int iitipocarta, string iirareza, int iicopias, string iiextradeck, int iinivel)
@@ -14,7 +15,7 @@ namespace SerializableYugi
             InitializeComponent();
             tipocarta = iitipocarta;
             nombre.Text = iinombre.ToUpper();
-            tipomons.Text = iitipomons;
+            tipomons.Text = "["+iitipomons+"]";
             descripcion.Text = iidescripcion;
             atk.Text += iiatk;
             def.Text += iidef;
@@ -54,12 +55,13 @@ namespace SerializableYugi
             descripcion.Text = iidescripcion;
             set.Text = iiset;
             tipo.Visible = true;
+            ilustracion.ImageLocation = iiruta;
             this.Controls.Remove(panelnivel);
             tipo.Location = new System.Drawing.Point(158, 54);
             this.Text = "Nº de copias: " + iicopias + " - " + iirareza;
             switch (iitipocarta)
             {
-                case 2: atributo.Image = Properties.Resources.SPELL; this.BackgroundImage = Resources.SPELL_CARD; descripcion.BackColor = Color.Gainsboro; nombre.BackColor=Color.MediumSeaGreen; break;
+                case 2: atributo.Image = Properties.Resources.SPELL; this.BackgroundImage = Resources.SPELL_CARD; descripcion.BackColor = Color.Gainsboro; nombre.BackColor = Color.MediumSeaGreen; break;
                 case 3: atributo.Image = Properties.Resources.TRAP; this.BackgroundImage = Resources.TRAP_CARD; break;
             }
         }//CONSTRUCTOR2
@@ -67,15 +69,15 @@ namespace SerializableYugi
         private void Carta_Load(object sender, EventArgs e)
         {
             Fuente.CargarFuente();
-            Fuente.LocalizarFuente(this.nombre, 8);
+            Fuente.LocalizarFuente(this.nombre, 9);
             Fuente.LocalizarFuente(this.descripcion, 8);
             Fuente.LocalizarFuente(atk, 8);
             Fuente.LocalizarFuente(def, 8);
             Fuente.LocalizarFuente(set, 8);
-            Fuente.LocalizarFuente(tipomons, 6);
+            Fuente.LocalizarFuente(tipomons, 7);
             Fuente.LocalizarFuente(tipo, 8);
             Fuente.LocalizarFuente(editar, 8);
-        }
+        } 
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -97,7 +99,8 @@ namespace SerializableYugi
 
         public void RellenarNiveles(int iinivel)
         {
-            foreach (PictureBox pb in panelnivel.Controls) {
+            foreach (PictureBox pb in panelnivel.Controls)
+            {
                 if (int.Parse(pb.Tag + "") < iinivel) pb.BackgroundImage = Resources.nivestrella;
             }//FOREACH
         }//RELLENAR NIVELES

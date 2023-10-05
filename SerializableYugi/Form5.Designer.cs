@@ -122,9 +122,9 @@ namespace SerializableYugi
             this.ilustracion.ErrorImage = global::SerializableYugi.Properties.Resources.DEFAULTerror;
             this.ilustracion.Image = global::SerializableYugi.Properties.Resources.DEFAULTerror;
             this.ilustracion.InitialImage = global::SerializableYugi.Properties.Resources.DEFAULTerror;
-            this.ilustracion.Location = new System.Drawing.Point(36, 80);
+            this.ilustracion.Location = new System.Drawing.Point(36, 83);
             this.ilustracion.Name = "ilustracion";
-            this.ilustracion.Size = new System.Drawing.Size(218, 236);
+            this.ilustracion.Size = new System.Drawing.Size(212, 233);
             this.ilustracion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ilustracion.TabIndex = 10;
             this.ilustracion.TabStop = false;
@@ -132,9 +132,9 @@ namespace SerializableYugi
             // atributo
             // 
             this.atributo.BackColor = System.Drawing.Color.Transparent;
-            this.atributo.Location = new System.Drawing.Point(239, 21);
+            this.atributo.Location = new System.Drawing.Point(239, 25);
             this.atributo.Name = "atributo";
-            this.atributo.Size = new System.Drawing.Size(30, 27);
+            this.atributo.Size = new System.Drawing.Size(20, 20);
             this.atributo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.atributo.TabIndex = 2;
             this.atributo.TabStop = false;
@@ -151,8 +151,10 @@ namespace SerializableYugi
             // 
             // tipomons
             // 
-            this.tipomons.BackColor = System.Drawing.Color.MistyRose;
+            this.tipomons.BackColor = System.Drawing.Color.AntiqueWhite;
             this.tipomons.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tipomons.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.tipomons.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipomons.Location = new System.Drawing.Point(23, 334);
             this.tipomons.Name = "tipomons";
             this.tipomons.ReadOnly = true;
@@ -175,7 +177,7 @@ namespace SerializableYugi
             this.panelnivel.Controls.Add(this.pictureBox2);
             this.panelnivel.Controls.Add(this.pictureBox1);
             this.panelnivel.Controls.Add(this.pictureBox4);
-            this.panelnivel.Location = new System.Drawing.Point(23, 54);
+            this.panelnivel.Location = new System.Drawing.Point(18, 54);
             this.panelnivel.Name = "panelnivel";
             this.panelnivel.Size = new System.Drawing.Size(246, 20);
             this.panelnivel.TabIndex = 14;
@@ -311,7 +313,7 @@ namespace SerializableYugi
             // 
             // descripcion
             // 
-            this.descripcion.BackColor = System.Drawing.Color.MistyRose;
+            this.descripcion.BackColor = System.Drawing.Color.AntiqueWhite;
             this.descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.descripcion.Location = new System.Drawing.Point(23, 348);
             this.descripcion.Multiline = true;
@@ -323,13 +325,16 @@ namespace SerializableYugi
             // 
             // nombre
             // 
-            this.nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(197)))), ((int)(((byte)(95)))));
+            this.nombre.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombre.Location = new System.Drawing.Point(23, 28);
+            this.nombre.Margin = new System.Windows.Forms.Padding(0);
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
-            this.nombre.Size = new System.Drawing.Size(210, 13);
+            this.nombre.Size = new System.Drawing.Size(213, 13);
             this.nombre.TabIndex = 13;
+            this.nombre.WordWrap = false;
             // 
             // Carta
             // 

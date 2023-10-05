@@ -408,5 +408,25 @@ namespace SerializableYugi.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Yu_Gi_Oh__Matrix_Book {
+            get {
+                object obj = ResourceManager.GetObject("Yu_Gi_Oh__Matrix_Book", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] Yu_Gi_Oh__Matrix_Regular_Small_Caps_2 {
+            get {
+                object obj = ResourceManager.GetObject("Yu_Gi_Oh__Matrix_Regular_Small_Caps_2", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

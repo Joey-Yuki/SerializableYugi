@@ -10,7 +10,8 @@ namespace SerializableYugi
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr fuente, uint cbfont, IntPtr pdv, [In] ref uint pcFonts);
         static FontFamily ff;
-        static Font fuentecita;
+        static FontFamily ff2;
+        static FontFamily ff3;
         public static void CargarFuente()
         {
             byte[] arrayfuente = Properties.Resources.StoneSerifSemibold;
@@ -23,8 +24,7 @@ namespace SerializableYugi
             privateFontCollection.AddMemoryFont(pointer, datalenght);
             Marshal.FreeCoTaskMem(pointer);
             ff = privateFontCollection.Families[0];
-            fuentecita = new Font(ff, 15f, FontStyle.Regular);
-        }
+        }//CARGAR FUENTE 1
         public static void LocalizarFuente(System.Windows.Forms.Control c, float tamanho)
         {
             c.Font = new Font(ff, tamanho, FontStyle.Regular);
