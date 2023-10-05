@@ -8,7 +8,7 @@ namespace SerializableYugi
     {
         int tipocarta = 0;
         string extradeck;
-        public Carta(string iinombre, string iidescripcion, string iiatk, string iidef, string iitipomons, string iiatributo, string iiset, string iiruta, int iitipocarta, string iirareza, int iicopias, string iiextradeck)
+        public Carta(string iinombre, string iidescripcion, string iiatk, string iidef, string iitipomons, string iiatributo, string iiset, string iiruta, int iitipocarta, string iirareza, int iicopias, string iiextradeck, int iinivel)
         {
             InitializeComponent();
             tipocarta = iitipocarta;
@@ -41,6 +41,7 @@ namespace SerializableYugi
                 case "Xyz": this.BackgroundImage = Resources.XYZ; break;
                 case "Link": this.BackgroundImage = Resources.LINK; break;
             }
+            RellenarNiveles(iinivel);
         }//CONSTRUCTOR
 
         public Carta(string iinombre, string iitipo, string iidescripcion, string iiset, string iiruta, int iitipocarta, string iirareza, int iicopias)
@@ -91,7 +92,14 @@ namespace SerializableYugi
                     break;
             }
             fr4.Show();
-        }
+        }//BUTTON1
 
-    }
-}
+        public void RellenarNiveles(int iinivel)
+        {
+            foreach (PictureBox pb in panelnivel.Controls) {
+                if (int.Parse(pb.Tag + "") < iinivel) pb.BackgroundImage = Resources.nivestrella;
+            }//FOREACH
+        }//RELLENAR NIVELES
+    }//CLASS
+
+}//NAMESPACE

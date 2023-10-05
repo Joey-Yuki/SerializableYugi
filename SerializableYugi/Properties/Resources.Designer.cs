@@ -202,6 +202,26 @@ namespace SerializableYugi.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap niveles_estrella {
+            get {
+                object obj = ResourceManager.GetObject("niveles_estrella", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nivestrella {
+            get {
+                object obj = ResourceManager.GetObject("nivestrella", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NORMAL_MONSTER {
             get {
                 object obj = ResourceManager.GetObject("NORMAL_MONSTER", resourceCulture);
