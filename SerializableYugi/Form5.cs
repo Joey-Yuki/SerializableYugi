@@ -17,8 +17,8 @@ namespace SerializableYugi
             nombre.Text = iinombre.ToUpper();
             tipomons.Text = "[" + iitipomons + "]";
             descripcion.Text = iidescripcion;
-            atk.Text += iiatk;
-            def.Text += iidef;
+            atk.Text += "/"+iiatk;
+            def.Text += "/"+iidef;
             set.Text = iiset;
             extradeck = iiextradeck;
             tipomons.Visible = true;
@@ -38,7 +38,7 @@ namespace SerializableYugi
 
             switch (iiextradeck)
             {
-                case "Fusion": this.BackgroundImage = Resources.fusion; break;
+                case "Fusion": this.BackgroundImage = Resources.fusion; nombre.BackColor = Color.FromArgb(132,63,145); descripcion.BackColor=Color.FromArgb(211,190,218); atk.BackColor=Color.FromArgb(211, 190, 218); def.BackColor = Color.FromArgb(211, 190, 218); tipomons.BackColor = Color.FromArgb(211, 190, 218); set.BackColor = Color.FromArgb(132, 63, 145); break;
                 case "Sincronia": this.BackgroundImage = Resources.SYNCHRONY; break;
                 case "Xyz": this.BackgroundImage = Resources.XYZ; break;
                 case "Link": this.BackgroundImage = Resources.LINK; break;
@@ -69,11 +69,11 @@ namespace SerializableYugi
         private void Carta_Load(object sender, EventArgs e)
         {
             //Fuente.CargarFuente();
-            Fuente.LocalizarFuenteNombre(this.nombre, 10);
+            Fuente.LocalizarFuenteNombre(this.nombre, 12);
             Fuente.LocalizarFuenteDesc(this.descripcion, 8);
             Fuente.LocalizarFuente(atk, 8);
             Fuente.LocalizarFuente(def, 8);
-            Fuente.LocalizarFuente(set, 8);
+            Fuente.LocalizarFuente(set, 7);
             Fuente.LocalizarFuente(tipomons, 7);
             Fuente.LocalizarFuente(tipo, 8);
             Fuente.LocalizarFuente(editar, 8);

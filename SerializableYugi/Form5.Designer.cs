@@ -56,6 +56,7 @@ namespace SerializableYugi
             this.tipo = new System.Windows.Forms.TextBox();
             this.descripcion = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.TextBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ilustracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.atributo)).BeginInit();
@@ -72,6 +73,7 @@ namespace SerializableYugi
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -87,9 +89,9 @@ namespace SerializableYugi
             // 
             // atk
             // 
-            this.atk.BackColor = System.Drawing.Color.MistyRose;
+            this.atk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(220)))), ((int)(((byte)(197)))));
             this.atk.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.atk.Location = new System.Drawing.Point(3, 0);
+            this.atk.Location = new System.Drawing.Point(3, -2);
             this.atk.Name = "atk";
             this.atk.ReadOnly = true;
             this.atk.Size = new System.Drawing.Size(68, 13);
@@ -98,9 +100,9 @@ namespace SerializableYugi
             // 
             // def
             // 
-            this.def.BackColor = System.Drawing.Color.MistyRose;
+            this.def.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(220)))), ((int)(((byte)(197)))));
             this.def.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.def.Location = new System.Drawing.Point(77, 0);
+            this.def.Location = new System.Drawing.Point(76, -2);
             this.def.Name = "def";
             this.def.ReadOnly = true;
             this.def.Size = new System.Drawing.Size(68, 13);
@@ -109,7 +111,7 @@ namespace SerializableYugi
             // 
             // set
             // 
-            this.set.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.set.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(147)))), ((int)(((byte)(71)))));
             this.set.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.set.Location = new System.Drawing.Point(196, 322);
             this.set.Name = "set";
@@ -151,14 +153,14 @@ namespace SerializableYugi
             // 
             // tipomons
             // 
-            this.tipomons.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.tipomons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(220)))), ((int)(((byte)(197)))));
             this.tipomons.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tipomons.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tipomons.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipomons.Location = new System.Drawing.Point(23, 334);
+            this.tipomons.Location = new System.Drawing.Point(23, 336);
             this.tipomons.Name = "tipomons";
             this.tipomons.ReadOnly = true;
-            this.tipomons.Size = new System.Drawing.Size(100, 13);
+            this.tipomons.Size = new System.Drawing.Size(133, 13);
             this.tipomons.TabIndex = 6;
             this.tipomons.Visible = false;
             // 
@@ -313,9 +315,9 @@ namespace SerializableYugi
             // 
             // descripcion
             // 
-            this.descripcion.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.descripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(220)))), ((int)(((byte)(197)))));
             this.descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.descripcion.Location = new System.Drawing.Point(23, 348);
+            this.descripcion.Location = new System.Drawing.Point(23, 347);
             this.descripcion.Multiline = true;
             this.descripcion.Name = "descripcion";
             this.descripcion.ReadOnly = true;
@@ -325,16 +327,25 @@ namespace SerializableYugi
             // 
             // nombre
             // 
-            this.nombre.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(147)))), ((int)(((byte)(71)))));
             this.nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombre.Location = new System.Drawing.Point(23, 28);
+            this.nombre.Location = new System.Drawing.Point(23, 24);
             this.nombre.Margin = new System.Windows.Forms.Padding(0);
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             this.nombre.Size = new System.Drawing.Size(213, 13);
             this.nombre.TabIndex = 13;
             this.nombre.WordWrap = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox13.Location = new System.Drawing.Point(22, 407);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(240, 1);
+            this.pictureBox13.TabIndex = 15;
+            this.pictureBox13.TabStop = false;
             // 
             // Carta
             // 
@@ -345,6 +356,7 @@ namespace SerializableYugi
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(294, 450);
+            this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.panelnivel);
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.editar);
@@ -376,6 +388,7 @@ namespace SerializableYugi
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,5 +419,6 @@ namespace SerializableYugi
         private TextBox tipo;
         private TextBox descripcion;
         private TextBox nombre;
+        private PictureBox pictureBox13;
     }
 }
