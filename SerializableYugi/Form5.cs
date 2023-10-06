@@ -68,9 +68,9 @@ namespace SerializableYugi
 
         private void Carta_Load(object sender, EventArgs e)
         {
-            Fuente.CargarFuente();
-            Fuente.LocalizarFuente(this.nombre, 9);
-            Fuente.LocalizarFuente(this.descripcion, 8);
+            //Fuente.CargarFuente();
+            Fuente.LocalizarFuenteNombre(this.nombre, 10);
+            Fuente.LocalizarFuenteDesc(this.descripcion, 8);
             Fuente.LocalizarFuente(atk, 8);
             Fuente.LocalizarFuente(def, 8);
             Fuente.LocalizarFuente(set, 8);

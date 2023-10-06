@@ -21,7 +21,7 @@ namespace SerializableYugi
             Thread t = new Thread(new ThreadStart(Monstrar_monstruos));
             Thread t2 = new Thread(new ThreadStart(Monstrar_magicas));
             Thread t3 = new Thread(new ThreadStart(Monstrar_trampas));
-            Fuente.CargarFuente();
+            //Fuente.CargarFuente();
             Fuente.LocalizarFuente(this.buttonEliminar, 8);
             Fuente.LocalizarFuente(this.Anhadir, 8);
             Fuente.LocalizarFuente(this.listBoxBaraja, 8);

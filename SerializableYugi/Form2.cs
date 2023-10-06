@@ -165,7 +165,7 @@ namespace SerializableYugi
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            Fuente.CargarFuente();
+            //Fuente.CargarFuente();
             Fuente.LocalizarFuente(panelCHK, 9);
             Fuente.LocalizarFuente(paneletiquetas1, 9);
             Fuente.LocalizarFuente(panelgen, 9);
