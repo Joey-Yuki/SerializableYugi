@@ -38,10 +38,43 @@ namespace SerializableYugi
 
             switch (iiextradeck)
             {
-                case "Fusion": this.BackgroundImage = Resources.fusion; nombre.BackColor = Color.FromArgb(132,63,145); descripcion.BackColor=Color.FromArgb(211,190,218); atk.BackColor=Color.FromArgb(211, 190, 218); def.BackColor = Color.FromArgb(211, 190, 218); tipomons.BackColor = Color.FromArgb(211, 190, 218); set.BackColor = Color.FromArgb(132, 63, 145); break;
-                case "Sincronia": this.BackgroundImage = Resources.SYNCHRONY; break;
-                case "Xyz": this.BackgroundImage = Resources.XYZ; break;
-                case "Link": this.BackgroundImage = Resources.LINK; break;
+                case "Fusion":  this.BackgroundImage = Resources.fusion; 
+                                nombre.BackColor = Color.FromArgb(132,63,145); 
+                                descripcion.BackColor=Color.FromArgb(211,190,218); 
+                                atk.BackColor=Color.FromArgb(211, 190, 218); 
+                                def.BackColor = Color.FromArgb(211, 190, 218); 
+                                tipomons.BackColor = Color.FromArgb(211, 190, 218); 
+                                set.BackColor = Color.FromArgb(132, 63, 145); 
+                                break;
+                
+                case "Sincronia":  this.BackgroundImage = Resources.SYNCHRONY;
+                                   nombre.BackColor = Color.FromArgb(228, 227, 226);
+                                   descripcion.BackColor = Color.FromArgb(228, 227, 226);
+                                   atk.BackColor = Color.FromArgb(228, 227, 226);
+                                   def.BackColor = Color.FromArgb(228, 227, 226);
+                                   tipomons.BackColor = Color.FromArgb(228, 227, 226);
+                                   set.BackColor = Color.FromArgb(228, 227, 226);
+                                   break;
+                
+                case "Xyz": this.BackgroundImage = Resources.XYZ;
+                            nombre.BackColor = Color.FromArgb(9, 10, 11);
+                            nombre.ForeColor = Color.White;
+                            descripcion.BackColor = Color.FromArgb(226, 226, 225);
+                            atk.BackColor = Color.FromArgb(226, 226, 225);
+                            def.BackColor = Color.FromArgb(226, 226, 225);
+                            tipomons.BackColor = Color.FromArgb(226, 226, 225);
+                            set.BackColor = Color.FromArgb(9, 10, 11);
+                            set.ForeColor = Color.White;
+                            break;
+                case "Link":    this.BackgroundImage = Resources.LINK;
+                                nombre.BackColor = Color.FromArgb(13, 91, 152);
+                                descripcion.BackColor = Color.FromArgb(198, 211, 234);
+                                atk.BackColor = Color.FromArgb(198, 211, 234);
+                                def.BackColor = Color.FromArgb(198, 211, 234);
+                                tipomons.BackColor = Color.FromArgb(198, 211, 234);
+                                set.BackColor = Color.FromArgb(13, 91, 152);
+                                def.Text = "LINK - " + iinivel;
+                                break;
             }
             RellenarNiveles(iinivel);
         }//CONSTRUCTOR
