@@ -208,6 +208,7 @@
     <Content Include="ICONOS\nivestrella.png" />
     <Content Include="ICONOS\NORMAL_MONSTER.png" />
     <None Include="ICONOS\SPELL_CARD.png" />
+    <Content Include="ICONOS\rankstar.png" />
     <Content Include="ICONOS\SYNCHRONY.png" />
     <None Include="ICONOS\TRAP_CARD.png" />
     <Content Include="ICONOS\XYZ.png" />

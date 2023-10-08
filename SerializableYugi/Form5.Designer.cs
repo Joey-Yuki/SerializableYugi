@@ -306,10 +306,11 @@ namespace SerializableYugi
             // 
             // tipo
             // 
+            this.tipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tipo.Location = new System.Drawing.Point(36, 80);
             this.tipo.Name = "tipo";
             this.tipo.ReadOnly = true;
-            this.tipo.Size = new System.Drawing.Size(105, 20);
+            this.tipo.Size = new System.Drawing.Size(105, 13);
             this.tipo.TabIndex = 8;
             this.tipo.Visible = false;
             // 

@@ -76,7 +76,7 @@ namespace SerializableYugi
                                 def.Text = "LINK - " + iinivel;
                                 break;
             }
-            RellenarNiveles(iinivel);
+            if(iiextradeck!="Link") RellenarNiveles(iinivel, iiextradeck);
         }//CONSTRUCTOR
 
         public Carta(string iinombre, string iitipo, string iidescripcion, string iiset, string iiruta, int iitipocarta, string iirareza, int iicopias)
@@ -94,14 +94,27 @@ namespace SerializableYugi
             this.Text = "Nº de copias: " + iicopias + " - " + iirareza;
             switch (iitipocarta)
             {
-                case 2: atributo.Image = Properties.Resources.SPELL; this.BackgroundImage = Resources.SPELL_CARD; descripcion.BackColor = Color.Gainsboro; nombre.BackColor = Color.MediumSeaGreen; break;
-                case 3: atributo.Image = Properties.Resources.TRAP; this.BackgroundImage = Resources.TRAP_CARD; break;
+                case 2: atributo.Image = Properties.Resources.SPELL; 
+                                         this.BackgroundImage = Resources.SPELL_CARD;                                          descripcion.BackColor = Color.Gainsboro; 
+                                         nombre.BackColor = Color.FromArgb(37, 140, 124);
+                                         tipo.BackColor = Color.FromArgb(37, 140, 124);
+                                         descripcion.BackColor = Color.FromArgb(178, 203, 197);
+                                         set.BackColor = Color.FromArgb(37, 140, 124);
+                                         pictureBox13.Visible = false;
+                                         break;
+                case 3: atributo.Image = Properties.Resources.TRAP; 
+                                         this.BackgroundImage = Resources.TRAP_CARD;
+                                         descripcion.BackColor = Color.FromArgb(224, 192, 208);
+                                         nombre.BackColor = Color.FromArgb(169, 47, 116);
+                                         tipo.BackColor = Color.FromArgb(169, 47, 116);
+                                         set.BackColor = Color.FromArgb(169, 47, 116);
+                                         pictureBox13.Visible = false;
+                                         break;
             }
         }//CONSTRUCTOR2
 
         private void Carta_Load(object sender, EventArgs e)
         {
-            //Fuente.CargarFuente();
             Fuente.LocalizarFuenteNombre(this.nombre, 12);
             Fuente.LocalizarFuenteDesc(this.descripcion, 8);
             Fuente.LocalizarFuente(atk, 8);
@@ -130,11 +143,13 @@ namespace SerializableYugi
             fr4.Show();
         }//BUTTON1
 
-        public void RellenarNiveles(int iinivel)
+        public void RellenarNiveles(int iinivel, string iiextrad)
         {
             foreach (PictureBox pb in panelnivel.Controls)
             {
-                if (int.Parse(pb.Tag + "") < iinivel) pb.BackgroundImage = Resources.nivestrella;
+                if (int.Parse(pb.Tag + "") < iinivel && iiextrad!="Xyz") pb.BackgroundImage = Resources.nivestrella;
+                else
+                    if(iiextrad=="Xyz" && int.Parse(pb.Tag + "") < iinivel) pb.BackgroundImage = Resources.rankstar;
             }//FOREACH
         }//RELLENAR NIVELES
     }//CLASS

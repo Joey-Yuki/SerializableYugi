@@ -345,7 +345,6 @@ namespace SerializableYugi
         private void Form4_Load(object sender, EventArgs e)
         {
             this.Icon = Properties.Resources.KURIBOH;
-            //Fuente.CargarFuente();
             Fuente.LocalizarFuente(button1, 8);
             Fuente.LocalizarFuente(button2, 8);
             Fuente.LocalizarFuente(button3, 8);
