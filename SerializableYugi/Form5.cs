@@ -33,6 +33,7 @@ namespace SerializableYugi
                 case "Tierra": atributo.Image = Properties.Resources.EARTH; break;
                 case "Fuego": atributo.Image = Properties.Resources.FIRE; break;
                 case "Agua": atributo.Image = Properties.Resources.WATER; break;
+                case "Divinidad": atributo.Image = Properties.Resources.DIVINE; break;
 
             }
 

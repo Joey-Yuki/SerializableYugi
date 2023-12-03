@@ -349,6 +349,8 @@ namespace SerializableYugi
             Fuente.LocalizarFuente(button2, 8);
             Fuente.LocalizarFuente(button3, 8);
             Fuente.LocalizarFuente(buscada, 8);
+            Fuente.LocalizarFuente(button4, 8);
+            Fuente.LocalizarFuente(url, 8);
             foreach (Control c in paneletiquetas1.Controls)
             {
                 Fuente.LocalizarFuente(c, 8);
@@ -376,6 +378,17 @@ namespace SerializableYugi
         private void Nombre_Click(object sender, EventArgs e)
         {
             (sender as TextBox).ReadOnly = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            rutadeimagen = url.Text;
+            url.Clear();
+        }
+
+        private void url_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

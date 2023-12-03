@@ -235,6 +235,12 @@ namespace SerializableYugi
             catch (Exception) { }
             return existe;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            rutadeimagen = url.Text;
+            url.Clear();
+        }
     }
 
 }

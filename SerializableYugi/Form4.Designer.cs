@@ -69,6 +69,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.paneletiquetas1 = new System.Windows.Forms.Panel();
             this.paneletiquetas2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.url = new System.Windows.Forms.TextBox();
             this.panelCHK.SuspendLayout();
             this.panelgen.SuspendLayout();
             this.panelmonst.SuspendLayout();
@@ -541,6 +543,24 @@
             this.paneletiquetas2.Size = new System.Drawing.Size(71, 285);
             this.paneletiquetas2.TabIndex = 61;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(521, 373);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(121, 23);
+            this.button4.TabIndex = 62;
+            this.button4.Text = "Añadir Imagen Online";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // url
+            // 
+            this.url.Location = new System.Drawing.Point(648, 373);
+            this.url.Name = "url";
+            this.url.Size = new System.Drawing.Size(140, 20);
+            this.url.TabIndex = 63;
+            this.url.TextChanged += new System.EventHandler(this.url_TextChanged);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -549,6 +569,8 @@
             this.BackgroundImage = global::SerializableYugi.Properties.Resources.DUEL_ACADEMY;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.url);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.buscada);
             this.Controls.Add(this.button2);
@@ -621,5 +643,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel paneletiquetas1;
         private System.Windows.Forms.Panel paneletiquetas2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox url;
     }
 }

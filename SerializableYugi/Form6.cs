@@ -35,6 +35,7 @@ namespace SerializableYugi
             t.Start();
             t2.Start();
             t3.Start();
+
         }
 
         public void Monstrar_monstruos()
@@ -53,6 +54,7 @@ namespace SerializableYugi
                     fs.Close();
                 }
                 catch (FileNotFoundException) { }
+                listBoxMonstruos.Sorted = true;
             }));
         }
         public void Monstrar_magicas()
@@ -72,6 +74,7 @@ namespace SerializableYugi
                     fs.Close();
                 }
                 catch (FileNotFoundException) { }
+                listBoxMagia.Sorted = true;
             }));
         }
         private void Monstrar_trampas()
@@ -91,6 +94,7 @@ namespace SerializableYugi
                     fs.Close();
                 }
                 catch (FileNotFoundException) { }
+                listBoxTrampas.Sorted = true;
             }));
         }
         private void AnnnadirBaraja()
